@@ -7,7 +7,7 @@ BASE_URL = "https://sandbox.api.visa.com/wallet-services-web/"
 GET_URL = "payment/data/"
 
 def get_payment_data(call_id)
-  resource_path = "GET_URL#{call_id}"
+  resource_path = "#{GET_URL}#{call_id}"
   query_string = "apiKey=#{API_KEY}&dataLevel=FULL"
   request_body = ""
 
